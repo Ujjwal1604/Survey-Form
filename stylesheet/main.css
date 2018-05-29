@@ -33,6 +33,7 @@ body{
     background-color: white;
     box-shadow: 0 4px 8px 0 #514b4b; 
     color:#000F55;
+    hyphens: auto;
 }
 header{
     text-align: center;
