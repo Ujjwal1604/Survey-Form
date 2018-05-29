@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@media only screen and (max-width: 480px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (min-width: 481px) {
+    html {
+      font-size: calc(14px + (100vw - 480px) * ((18 - 14) / (1200 - 480)));
+    }
+  }
+  
+  @media only screen and (min-width: 1201px) {
+    html {
+      font-size: 18px;
+    }
+  }
+body{
+    background:url("../image/table\ top.jpg") no-repeat;
+    background-size: 100vw 190vh;
+    line-height:1.4rem ;
+}
+
+#main-content{
+    padding:2vw;
+    width:52.3vw;
+    margin:6vh 22vw;
+    position: relative;
+    font-family: 'Delius Swash Caps', cursive;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 #514b4b; 
+    color:#000F55;
+}
+header{
+    text-align: center;
+    font-family: 'Gabriela', serif;
+    border-bottom: 1px solid black;
+    color: black;
+ }
+#description{
+    position: relative;
+}
+#survey-form{
+    position: relative;
+}
+.input-field{
+    display: block;
+    padding:1vw;
+    font-size:1em;
+} 
+input[type="text"]{
+    width:10.9rem;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #000F55;
+    margin-left: 0.4rem;
+}
+input[type="email"]{
+    width:10.9rem;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #000F55;
+    margin-left: 0.7rem;
+}
+input[type="number"]{
+    width:10.99rem;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #000F55;
+    margin-left: 1.2rem;
+}
+input:invalid {
+    box-shadow:none;
+    border-bottom: 2px solid red;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-butto{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+fieldset{
+    border:none;
+}
+input[type="radio"]{
+    opacity:0;
+    width:0;
+    margin:0;
+}
+.radio-label{
+    display:inline-block;
+    margin-bottom: 0.5rem;
+    background:url("../image/radio.png") no-repeat;
+    padding-left: 2rem;
+    line-height: 1.5rem;
+    background-position: 0 100%; 
+    background-size: 1.33rem;
+    cursor:  pointer;
+    transition: 0.1s;
+}
+input:checked + .radio-label{
+    background-position: 0 0%;
+    background-size: 1.33rem;
+}
+input[type="checkbox"]{
+    opacity:0;
+    width:0;
+    margin:0;
+} 
+.checkbox-label{
+    display:inline-block;
+    margin-bottom: 0.5rem;
+    background:url("../image/checkbox.png") no-repeat;
+    padding-left: 2rem;
+    line-height: 1.5rem;
+    background-position: 0 100%; 
+    background-size: 1.33rem;
+    cursor:  pointer;
+}
+input:checked + .checkbox-label{
+    background-position: 0 0%; 
+    background-size: 1.33rem;
+}

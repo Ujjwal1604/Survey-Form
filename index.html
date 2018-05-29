@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet/normalize.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Delius|Delius+Swash+Caps|Gabriela" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js" async defer></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main id="main-content">
+            <header>
+                <h1 id="title">Website Content Survey</h1>
+            </header>
+            <p id="description">Thank you for visiting our website. Please help us improve by taking this brief survey that asks you to share how you experienced our website.</p>
+            <form action="#" id="survey-form">
+                <div class="input-field">
+                    <label for="name" id="name-label" >Name: </label>
+                    <input type="text" name="name" id="name"  placeholder="Enter Your Name" required>
+                </div>
+                <div class="input-field">
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" name="email" placeholder="Enter Your Email" id="email" required>
+                </div>
+                <div class="input-field">
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" min="1" max="125" name="age" id="number" placeholder="Age" required>
+                </div>
+                <fieldset class="input-field" id="radio-buttons" > 
+                    <legend> How satisfied are you with the content? </legend>
+                    <input type="radio" name="satisfaction-level" value="1star" id="1star">
+                    <label for="1star" class="radio-label">Very dissatisfied </label><br>
+                    <input type="radio" name="satisfaction-level" value="2star" id="2star">
+                    <label for="2star" class="radio-label">Dissatisfied </label><br>
+                    <input type="radio" name="satisfaction-level" value="3star" id="3star">
+                    <label for="3star" class="radio-label">Neutral</label><br>
+                    <input type="radio" name="satisfaction-level" value="4star" id="4star">
+                    <label for="4star" class="radio-label">Satisfied </label><br>
+                    <input type="radio" name="satisfaction-level" value="5star" id="5star">
+                    <label for="5star" class="radio-label">Very satisfied </label><br>
+                </fieldset>
+                <fieldset class="input-field" id="checkboxes">
+                    <legend>What prompted your visit to our site today? Please select all that apply.</legend>
+                    <input type="checkbox" name="Reason" value="compare" id="compare">
+                    <label for="compare" class="checkbox-label">Comparison shopping</label><br>
+                    <input type="checkbox" name="Reason" value="purchase" id="purchase">
+                    <label for="purchase" class="checkbox-label">Interested in purchasing products/services</label><br>
+                    <input type="checkbox" name="Reason" value="contactinfo" id="contactinfo">
+                    <label for="contactinfo" class="checkbox-label">Looking for contact information</label><br>
+                    <input type="checkbox" name="Reason" value="techsupport" id="techsupport">
+                    <label for="techsupport" class="checkbox-label">Looking for technical support</label><br>
+                    <input type="checkbox" name="Reason" value="other" id="other">
+                    <label for="other" class="checkbox-label">Other</label><br>
+                </fieldset>
+                <div class="input-field">
+                    <label for="frequency">How frequently do you visit our site?</label>
+                    <select name="frequency" id="dropdown">
+                        <option value="First Choice">First Choice</option>
+                        <option value="Daily">Daily</option>
+                        <option value="A few times per week">A few times per week</option>
+                        <option value="Once per week">Once per week</option>
+                        <option value="A few times per month">A few times per month</option>
+                        <option value="Once per month">Once per month</option>
+                        <option value="Less frequently than once per month">Less frequently than once per month</option>
+                </select>
+                </div>
+                <div class="input-field">
+                    <label for="comments">Do you have any other comments about how we can improve our website?</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <button type="submit" id="submit">Done</button>
+            </form>
+        </main>
+    </body>
+</html>
