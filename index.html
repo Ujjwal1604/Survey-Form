@@ -8,13 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheet/normalize.css"> 
         <link href="https://fonts.googleapis.com/css?family=Delius|Delius+Swash+Caps|Gabriela" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="stylesheet/main.css">
-        <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js" async defer></script>
+        <!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>  -->
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         <main id="main-content">
             <header>
                 <h1 id="title">Website Content Survey</h1>
@@ -22,19 +20,19 @@
             <p id="description">Thank you for visiting our website. Please help us improve by taking this brief survey that asks you to share how you experienced our website.</p>
             <form action="#" id="survey-form">
                 <div class="input-field">
-                    <label for="name" id="name-label" >Name: </label>
-                    <input type="text" name="name" id="name"  placeholder="Enter Your Name" required>
+                    <label for="name" id="name-label" class="input-label" >Name: </label>
+                    <input type="text" name="name" id="name"  placeholder="Enter Your Name" required><span id="name-error"></span>
                 </div>
                 <div class="input-field">
-                    <label for="email" id="email-label">Email:</label>
-                    <input type="email" name="email" placeholder="Enter Your Email" id="email" required>
+                    <label for="email" id="email-label" class="input-label">Email:</label>
+                    <input type="email" name="email" placeholder="Enter Your Email" id="email" required><span id="email-error"></span>
                 </div>
                 <div class="input-field">
-                <label for="number" id="number-label">Age:</label>
-                <input type="number" min="1" max="125" name="age" id="number" placeholder="Age" required>
+                <label for="number" id="number-label" class="input-label">Age:</label>
+                <input type="number" min="1" max="125" name="age" id="number" placeholder="Age" required><span id="age-error"></span>
                 </div>
                 <fieldset class="input-field" id="radio-buttons" > 
-                    <legend> How satisfied are you with the content? </legend>
+                    <legend class="input-label"> How satisfied are you with the content? </legend>
                     <input type="radio" name="satisfaction-level" value="1star" id="1star">
                     <label for="1star" class="radio-label">Very dissatisfied </label><br>
                     <input type="radio" name="satisfaction-level" value="2star" id="2star">
@@ -47,7 +45,7 @@
                     <label for="5star" class="radio-label">Very satisfied </label><br>
                 </fieldset>
                 <fieldset class="input-field" id="checkboxes">
-                    <legend>What prompted your visit to our site today? Please select all that apply.</legend>
+                    <legend class="input-label">What prompted your visit to our site today? Please select all that apply.</legend>
                     <input type="checkbox" name="Reason" value="compare" id="compare">
                     <label for="compare" class="checkbox-label">Comparison shopping</label><br>
                     <input type="checkbox" name="Reason" value="purchase" id="purchase">
@@ -60,7 +58,7 @@
                     <label for="other" class="checkbox-label">Other</label><br>
                 </fieldset>
                 <div class="input-field">
-                    <label for="dropdown">How frequently do you visit our site?</label>
+                    <label for="dropdown" class="input-label">How frequently do you visit our site?</label><br>
                     <select name="frequency" id="dropdown">
                         <option value="First Choice">First Choice</option>
                         <option value="Daily">Daily</option>
@@ -72,7 +70,7 @@
                 </select>
                 </div>
                 <div class="input-field">
-                    <label for="comments">Do you have any other comments about how we can improve our website?</label>
+                    <label for="comments" class="input-label">Do you have any other comments about how we can improve our website?</label>
                     <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
                 </div>
                 <button type="submit" id="submit">Done</button>

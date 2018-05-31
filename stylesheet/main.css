@@ -2,44 +2,62 @@
     margin: 0px;
     padding: 0px;
 }
+main, header{
+    display: block;
+}
 @media only screen and (max-width: 480px) {
     html {
       font-size: 14px;
     }
   }
-  @media only screen and (min-width: 481px) {
+@media only screen and (min-width: 481px) {
     html {
       font-size: calc(14px + (100vw - 480px) * ((18 - 14) / (1200 - 480)));
     }
   }
   
-  @media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1201px) {
     html {
       font-size: 18px;
     }
   }
+  
+
 body{
     background:url("../image/table\ top.jpg") no-repeat;
-    background-size: 100vw 190vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     line-height:1.4rem ;
 }
 
 #main-content{
     padding:2vw;
-    width:52.3vw;
-    margin:6vh 22vw;
+    width:calc(260px + (100vw - 320px) * ((685 - 260) / (1366 - 320)));
+    margin:6vh auto;
     position: relative;
     font-family: 'Delius Swash Caps', cursive;
     background-color: white;
-    box-shadow: 0 4px 8px 0 #514b4b; 
-    color:#000F55;
-    hyphens: auto;
+    -webkit-box-shadow: 0 3px 6px 0 #514b4b;
+            box-shadow: 0 3px 6px 0 #514b4b; 
+    color:#6c3c5b;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    border-top-left-radius: 5.67rem 0.5rem;
+    border-top-right-radius: 0.56rem 5.56rem;
+    border-bottom-left-radius: 0.56rem 2.56rem;
+    border-bottom-right-radius: 5.56rem 0.56rem;
 }
 header{
     text-align: center;
     font-family: 'Gabriela', serif;
     border-bottom: 1px solid black;
     color: black;
+ }
+ #title{
+    font-size: 1.602rem;
+    font-weight: bold;
  }
 #description{
     position: relative;
@@ -55,28 +73,104 @@ header{
 input[type="text"]{
     width:10.9rem;
     outline: none;
+    padding:0.3rem;
     border:none;
-    border-bottom: 2px solid #000F55;
+    border-bottom: 1px solid grey;
     margin-left: 0.4rem;
+    transition: border-bottom 1.5s;
 }
+
 input[type="email"]{
     width:10.9rem;
+    padding:0.3rem;
     outline: none;
     border:none;
-    border-bottom: 2px solid #000F55;
+    border-bottom: 1px solid grey;
     margin-left: 0.7rem;
+    transition:border-bottom 1.5s;
 }
 input[type="number"]{
     width:10.99rem;
+    padding:0.3rem;
     outline: none;
     border:none;
-    border-bottom: 2px solid #000F55;
+    border-bottom: 1px solid grey;
     margin-left: 1.2rem;
+    transition: border-bottom 1.5s;
 }
-input:invalid {
-    box-shadow:none;
-    border-bottom: 2px solid red;
+
+input:required:invalid {
+    -webkit-box-shadow:none;
+            box-shadow:none;
+    border-bottom: 1px solid red;
 }
+input:required:valid{
+    border:none;
+    border-bottom: 1px solid rgb(13, 194, 13);
+}
+input[type="text"]:invalid + #name-error::after{
+    content: "!Enter a valid Name";
+    margin:0.5rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color:red;
+    background-color:white;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+input[type="email"]:invalid + #email-error::after{
+    content: "!Enter a valid Email-Id";
+    margin:0.5rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color:red;
+    background-color:white;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+input[type="number"]:invalid + #age-error::after{
+    content: "!Enter a valid Age";
+    margin-left:0.5rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color:red;
+    background-color:white;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+input[type="text"]:valid + #name-error::after{
+    font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 1rem;
+    margin-left:0.5rem;
+    color:rgb(13, 194, 13);
+}
+input[type="email"]:valid + #email-error::after{
+    font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 1rem;
+    margin-left:0.5rem;
+    color:rgb(13, 194, 13);
+}
+input[type="number"]:valid + #age-error::after{
+    font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 1rem;
+    margin-left:0.5rem;
+    color:rgb(13, 194, 13);
+}
+@media only screen and (max-width: 584px) {
+    input[type="text"]:invalid + #name-error::after, input[type="email"]:invalid + #email-error::after, input[type="number"]:invalid + #age-error::after{
+        margin-top: 1em;
+        width:10.9rem;
+      display: block;
+      margin-left:4em;
+      margin-bottom: 0.5em;
+    }
+  }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-butto{
     -webkit-appearance: none;
@@ -84,46 +178,90 @@ input[type=number]::-webkit-outer-spin-butto{
 }
 input[type=number]{
     -moz-appearance: textfield;
-}
+} 
 fieldset{
     border:none;
 }
 input[type="radio"]{
-    opacity:0;
-    width:0;
-    margin:0;
+    width:1px;
+    height: 1px;
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;  
 }
 .radio-label{
     display:inline-block;
     margin-bottom: 0.5rem;
-    background:url("../image/radio.png") no-repeat;
+    background:url("../image/off\ radio.png") no-repeat;
     padding-left: 2rem;
-    line-height: 1.5rem;
-    background-position: 0 100%; 
+    line-height: 1.5rem; 
     background-size: 1.33rem;
     cursor:  pointer;
-    transition: 0.1s;
 }
 input:checked + .radio-label{
-    background-position: 0 0%;
+    background:url("../image/on\ radio.png") no-repeat;
     background-size: 1.33rem;
 }
-input[type="checkbox"]{
-    opacity:0;
-    width:0;
-    margin:0;
+input[type="checkbox"]{ 
+    width:1px;
+    height: 1px;
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden 
 } 
 .checkbox-label{
     display:inline-block;
     margin-bottom: 0.5rem;
-    background:url("../image/checkbox.png") no-repeat;
+    background:url("../image/unchecked.png") no-repeat;
     padding-left: 2rem;
     line-height: 1.5rem;
-    background-position: 0 100%; 
     background-size: 1.33rem;
     cursor:  pointer;
 }
 input:checked + .checkbox-label{
-    background-position: 0 0%; 
+    background:url("../image/checked.png") no-repeat; 
     background-size: 1.33rem;
+}
+
+#dropdown{
+    margin-top:0.8rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-top:0.6rem;
+    padding-bottom:0.6rem;
+    border:1px solid #000F55;
+    border-radius: 3px;
+    background: url("../image/dropdown.png") no-repeat 99% center ;
+    background-size: 2rem;
+    cursor: pointer;
+}
+#comments{
+    display: block;
+    margin-top:0.8rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border:1px solid #000F55;
+    padding-top:0.3rem;
+    border-radius: 3px;
+    width:calc(240px + (100vw - 320px) * ((600 - 240) / (1366 - 320)));
+    height:7rem;
+    resize: none;
+}
+#submit{
+    background-color: #6c3c5b;
+    color: white;
+    display: block;
+    margin-left:  auto;
+    margin-right:  auto;
+    width:6rem;
+    padding:0.6rem;
+    font-size: 1.3rem;
+    border: 1px solid #6c3c5b;
+    border-radius: 5px;
+}
+.input-label{
+    font-size: 1rem;
+    font-weight: bold;
 }
