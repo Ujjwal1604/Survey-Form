@@ -7,8 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheet/normalize.css"> 
-        <link href="https://fonts.googleapis.com/css?family=Delius|Delius+Swash+Caps|Gabriela" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Delius|Delius|Gabriela" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" href="stylesheet/main.css">
         <!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>  -->
     </head>
@@ -17,22 +18,23 @@
             <header>
                 <h1 id="title">Website Content Survey</h1>
             </header>
+            <div id="form-content">
             <p id="description">Thank you for visiting our website. Please help us improve by taking this brief survey that asks you to share how you experienced our website.</p>
             <form action="#" id="survey-form">
                 <div class="input-field">
                     <label for="name" id="name-label" class="input-label" >Name: </label>
-                    <input type="text" name="name" id="name"  placeholder="Enter Your Name" required><span id="name-error"></span>
+                    <input type="text" name="name" id="name"  placeholder="Enter Your Name" required><span class="validation"></span>
                 </div>
                 <div class="input-field">
                     <label for="email" id="email-label" class="input-label">Email:</label>
-                    <input type="email" name="email" placeholder="Enter Your Email" id="email" required><span id="email-error"></span>
+                    <input type="email" name="email" placeholder="Enter Your Email" id="email" required><span class="validation"></span>
                 </div>
                 <div class="input-field">
                 <label for="number" id="number-label" class="input-label">Age:</label>
-                <input type="number" min="1" max="125" name="age" id="number" placeholder="Age" required><span id="age-error"></span>
+                <input type="number" min="1" max="125" name="age" id="number" placeholder="Age" required><span class="validation"></span>
                 </div>
                 <fieldset class="input-field" id="radio-buttons" > 
-                    <legend class="input-label"> How satisfied are you with the content? </legend>
+                    <legend class="input-label" id="radio-legend"> How satisfied are you with the content? </legend>
                     <input type="radio" name="satisfaction-level" value="1star" id="1star">
                     <label for="1star" class="radio-label">Very dissatisfied </label><br>
                     <input type="radio" name="satisfaction-level" value="2star" id="2star">
@@ -45,7 +47,7 @@
                     <label for="5star" class="radio-label">Very satisfied </label><br>
                 </fieldset>
                 <fieldset class="input-field" id="checkboxes">
-                    <legend class="input-label">What prompted your visit to our site today? Please select all that apply.</legend>
+                    <legend class="input-label" id="checkbox-legend">What prompted your visit to our site today? Please select all that apply.</legend>
                     <input type="checkbox" name="Reason" value="compare" id="compare">
                     <label for="compare" class="checkbox-label">Comparison shopping</label><br>
                     <input type="checkbox" name="Reason" value="purchase" id="purchase">
@@ -75,6 +77,11 @@
                 </div>
                 <button type="submit" id="submit">Done</button>
             </form>
+        </div>
         </main>
+        <footer>
+            <p>Site Designed by Ujjwal</p>
+            <p>Icons by <a href="https://icons8.com" target="_blank">icons8</a></p>
+        </footer>
     </body>
 </html>
