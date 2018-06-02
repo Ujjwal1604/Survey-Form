@@ -1,117 +1,87 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-
-	<title>Website Content Survey</title>
-	<meta content="" name="description">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="stylesheet/normalize.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Delius|Delius|Gabriela" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-	<link href="stylesheet/main.css" rel="stylesheet">
-	<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js">
-	</script>
-</head>
-
-<body>
-	<main id="main-content">
-		<header>
-			<h1 id="title">Website Content Survey</h1>
-		</header>
-
-
-		<div id="form-content">
-			<p id="description">Thank you for visiting our website. Please help us improve by taking this brief survey that asks you to share how you experienced our website.</p>
-
-
-			<form action="#" id="survey-form" name="survey-form">
-				<div class="input-field">
-					<label class="input-label label-align" for="name" id="name-label">Name:</label> <input id="name" name="name" placeholder="Enter Your Name" required="" type="text"><span class="validation"></span>
-				</div>
-
-
-				<div class="input-field">
-					<label class="input-label label-align" for="email" id="email-label">Email:</label> <input id="email" name="email" placeholder="Enter Your Email" required="" type="email"><span class="validation"></span>
-				</div>
-
-
-				<div class="input-field">
-					<label class="input-label label-align" for="number" id="number-label">Age:</label> <input id="number" max="125" min="1" name="age" placeholder="Age" required="" type="number"><span class="validation"></span>
-				</div>
-
-
-				<fieldset class="input-field" id="radio-buttons">
-					<legend class="input-label" id="radio-legend">How satisfied are you with the content?</legend> <input class="hide-input" id="1star" name="satisfaction-level" type="radio" value="1star"> <label class="radio-label" for="1star">Very dissatisfied</label><br>
-					<input class="hide-input" id="2star" name="satisfaction-level" type="radio" value="2star"> <label class="radio-label" for="2star">Dissatisfied</label><br>
-					<input class="hide-input" id="3star" name="satisfaction-level" type="radio" value="3star"> <label class="radio-label" for="3star">Neutral</label><br>
-					<input class="hide-input" id="4star" name="satisfaction-level" type="radio" value="4star"> <label class="radio-label" for="4star">Satisfied</label><br>
-					<input checked class="hide-input" id="5star" name="satisfaction-level" type="radio" value="5star"> <label class="radio-label" for="5star">Very satisfied</label><br>
-				</fieldset>
-
-
-				<fieldset class="input-field" id="checkboxes">
-					<legend class="input-label" id="checkbox-legend">What prompted your visit to our site today? Please select all that apply.</legend> <input class="hide-input" id="compare" name="Reason" type="checkbox" value="compare"> <label class="checkbox-label" for="compare">Comparison shopping</label><br>
-					<input class="hide-input" id="purchase" name="Reason" type="checkbox" value="purchase"> <label class="checkbox-label" for="purchase">Interested in purchasing products/services</label><br>
-					<input class="hide-input" id="contactinfo" name="Reason" type="checkbox" value="contactinfo"> <label class="checkbox-label" for="contactinfo">Looking for contact information</label><br>
-					<input class="hide-input" id="techsupport" name="Reason" type="checkbox" value="techsupport"> <label class="checkbox-label" for="techsupport">Looking for technical support</label><br>
-					<input class="hide-input" id="other" name="Reason" type="checkbox" value="other"> <label class="checkbox-label" for="other">Other</label><br>
-				</fieldset>
-
-
-				<div class="input-field">
-					<label class="input-label" for="dropdown">How frequently do you visit our site?</label><br>
-					<select id="dropdown" name="frequency">
-						<option value="First Choice">
-							First Choice
-						</option>
-
-						<option value="Daily">
-							Daily
-						</option>
-
-						<option value="A few times per week">
-							A few times per week
-						</option>
-
-						<option value="Once per week">
-							Once per week
-						</option>
-
-						<option value="A few times per month">
-							A few times per month
-						</option>
-
-						<option value="Once per month">
-							Once per month
-						</option>
-
-						<option value="Less frequently than once per month">
-							Less frequently than once per month
-						</option>
-					</select>
-				</div>
-
-
-				<div class="input-field">
-					<label class="input-label" for="comments">Do you have any other comments about how we can improve our website?</label> 
-
-					<textarea cols="30" id="comments" name="comments" placeholder="Enter your comment here..." rows="10"></textarea>
-				</div>
-				<button id="submit" type="submit">Done</button>
-			</form>
-		</div>
-	</main>
-
-
-	<footer>
-		<p>Site Designed by Ujjwal</p>
-
-
-		<p>Icons by <a href="https://icons8.com" target="_blank">icons8</a></p>
-	</footer>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Website Content Survey</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet/normalize.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Delius|Delius|Gabriela" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>  -->
+    </head>
+    <body>
+        <main id="main-content">
+            <header>
+                <h1 id="title">Website Content Survey</h1>
+            </header>
+            <div id="form-content">
+            <p id="description">Thank you for visiting our website. Please help us improve by taking this brief survey that asks you to share how you experienced our website.</p>
+            <form action="#" id="survey-form">
+                <div class="input-field">
+                    <label for="name" id="name-label" class="input-label" >Name: </label>
+                    <input type="text" name="name" id="name"  placeholder="Enter Your Name" required><span class="validation"></span>
+                </div>
+                <div class="input-field">
+                    <label for="email" id="email-label" class="input-label">Email:</label>
+                    <input type="email" name="email" placeholder="Enter Your Email" id="email" required><span class="validation"></span>
+                </div>
+                <div class="input-field">
+                <label for="number" id="number-label" class="input-label">Age:</label>
+                <input type="number" min="1" max="125" name="age" id="number" placeholder="Age" required><span class="validation"></span>
+                </div>
+                <fieldset class="input-field" id="radio-buttons" > 
+                    <legend class="input-label" id="radio-legend"> How satisfied are you with the content? </legend>
+                    <input type="radio" name="satisfaction-level" value="1star" id="1star">
+                    <label for="1star" class="radio-label">Very dissatisfied </label><br>
+                    <input type="radio" name="satisfaction-level" value="2star" id="2star">
+                    <label for="2star" class="radio-label">Dissatisfied </label><br>
+                    <input type="radio" name="satisfaction-level" value="3star" id="3star">
+                    <label for="3star" class="radio-label">Neutral</label><br>
+                    <input type="radio" name="satisfaction-level" value="4star" id="4star">
+                    <label for="4star" class="radio-label">Satisfied </label><br>
+                    <input type="radio" name="satisfaction-level" value="5star" id="5star" checked>
+                    <label for="5star" class="radio-label">Very satisfied </label><br>
+                </fieldset>
+                <fieldset class="input-field" id="checkboxes">
+                    <legend class="input-label" id="checkbox-legend">What prompted your visit to our site today? Please select all that apply.</legend>
+                    <input type="checkbox" name="Reason" value="compare" id="compare">
+                    <label for="compare" class="checkbox-label">Comparison shopping</label><br>
+                    <input type="checkbox" name="Reason" value="purchase" id="purchase">
+                    <label for="purchase" class="checkbox-label">Interested in purchasing products/services</label><br>
+                    <input type="checkbox" name="Reason" value="contactinfo" id="contactinfo">
+                    <label for="contactinfo" class="checkbox-label">Looking for contact information</label><br>
+                    <input type="checkbox" name="Reason" value="techsupport" id="techsupport">
+                    <label for="techsupport" class="checkbox-label">Looking for technical support</label><br>
+                    <input type="checkbox" name="Reason" value="other" id="other">
+                    <label for="other" class="checkbox-label">Other</label><br>
+                </fieldset>
+                <div class="input-field">
+                    <label for="dropdown" class="input-label">How frequently do you visit our site?</label><br>
+                    <select name="frequency" id="dropdown">
+                        <option value="First Choice">First Choice</option>
+                        <option value="Daily">Daily</option>
+                        <option value="A few times per week">A few times per week</option>
+                        <option value="Once per week">Once per week</option>
+                        <option value="A few times per month">A few times per month</option>
+                        <option value="Once per month">Once per month</option>
+                        <option value="Less frequently than once per month">Less frequently than once per month</option>
+                </select>
+                </div>
+                <div class="input-field">
+                    <label for="comments" class="input-label">Do you have any other comments about how we can improve our website?</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <button type="submit" id="submit">Done</button>
+            </form>
+        </div>
+        </main>
+        <footer>
+            <p>Site Designed by Ujjwal</p>
+            <p>Icons by <a href="https://icons8.com" target="_blank">icons8</a></p>
+        </footer>
+    </body>
 </html>
