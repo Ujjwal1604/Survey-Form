@@ -29,9 +29,7 @@ footer {
   }
 }
 :root {
-  --main-body-width: calc(
-    260px + (100vw - 320px) * ((585 - 260) / (1366 - 320))
-  );
+  --main-body-width: calc(260px + (100vw - 320px) * ((585 - 260) / (1366 - 320)));
 }
 body {
   background: url("../image/table\ top.jpg") no-repeat;
@@ -39,10 +37,11 @@ body {
   background-position: center;
   background-attachment: fixed;
   line-height: 1.4rem;
+  
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.99rem;
   font-weight: bold;
 }
 #form-content {
@@ -72,8 +71,9 @@ header {
   width: var(--main-body-width, 500px);
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.7);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.7);
+  padding:2rem;
   margin: 2vw auto 0 auto;
-  padding: 2rem;
+  line-height:2.5rem;
 }
 @media only screen and (max-width: 380px) {
   main {
