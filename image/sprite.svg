@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="1000" viewBox="0 0 48 1600">
+
+  <defs>
+
+    <g id="name-purple">
+    <path d="M24 0C10.746 0 0 10.746 0 24s10.746 24 24 24c13.258 0 24-10.746 24-24S37.258 0 24 0zm0 13.715a5.083 5.083 0 1 1 0 10.164 5.08 5.08 0 0 1-5.082-5.082A5.08 5.08 0 0 1 24 13.715zm8.582 23.976a16.265 16.265 0 0 1-8.559 2.438c-3.16 0-6.105-.914-8.605-2.469V27.324a1.64 1.64 0 0 1 1.64-1.637h13.887c.903 0 1.637.735 1.637 1.637zm0 0" />
+  </g>
+  
+    <g id="name-green">
+    <path d="M24 0C10.746 0 0 10.746 0 24s10.746 24 24 24c13.258 0 24-10.746 24-24S37.258 0 24 0zm0 13.715a5.083 5.083 0 1 1 0 10.164 5.08 5.08 0 0 1-5.082-5.082A5.08 5.08 0 0 1 24 13.715zm8.582 23.976a16.265 16.265 0 0 1-8.559 2.438c-3.16 0-6.105-.914-8.605-2.469V27.324a1.64 1.64 0 0 1 1.64-1.637h13.887c.903 0 1.637.735 1.637 1.637zm0 0"/>
+  </g>
+
+  <g id="name-red">
+    <path d="M24 0C10.746 0 0 10.746 0 24s10.746 24 24 24c13.258 0 24-10.746 24-24S37.258 0 24 0zm0 13.715a5.083 5.083 0 1 1 0 10.164 5.08 5.08 0 0 1-5.082-5.082A5.08 5.08 0 0 1 24 13.715zm8.582 23.976a16.265 16.265 0 0 1-8.559 2.438c-3.16 0-6.105-.914-8.605-2.469V27.324a1.64 1.64 0 0 1 1.64-1.637h13.887c.903 0 1.637.735 1.637 1.637zm0 0" />
+  </g>
+
+<g id="mail-purple">
+    <path d="M29.195 25.453l14.852 12.73A3.033 3.033 0 0 1 41.98 39H6.02c-.801 0-1.532-.309-2.07-.813l14.855-12.734L24 30zM24 27L3.953 9.816A3.033 3.033 0 0 1 6.02 9h35.96c.801 0 1.532.309 2.07.813zm21 9.559l-14.496-12.32L45 11.624zm-42 0V11.633l14.496 12.605zm0 0" fill-rule="evenodd"/>
+  </g>
+
+  <g id="mail-green">
+    <path d="M29.195 25.453l14.852 12.73A3.033 3.033 0 0 1 41.98 39H6.02c-.801 0-1.532-.309-2.07-.813l14.855-12.734L24 30zM24 27L3.953 9.816A3.033 3.033 0 0 1 6.02 9h35.96c.801 0 1.532.309 2.07.813zm21 9.559l-14.496-12.32L45 11.624zm-42 0V11.633l14.496 12.605zm0 0" fill-rule="evenodd"/>
+  </g>
+
+  <g id="mail-red">
+    <path d="M29.195 25.453l14.852 12.73A3.033 3.033 0 0 1 41.98 39H6.02c-.801 0-1.532-.309-2.07-.813l14.855-12.734L24 30zM24 27L3.953 9.816A3.033 3.033 0 0 1 6.02 9h35.96c.801 0 1.532.309 2.07.813zm21 9.559l-14.496-12.32L45 11.624zm-42 0V11.633l14.496 12.605zm0 0" fill-rule="evenodd"/>
+  </g>
+
+  <g id="age-purple">
+  <path d="M0 6.828h6.855V3.414A3.426 3.426 0 0 1 10.285 0a3.42 3.42 0 0 1 3.43 3.414v3.414h20.57V3.414a3.42 3.42 0 0 1 3.43-3.41 3.423 3.423 0 0 1 3.43 3.41v3.414H48v10.246H0m0 3.414h48v30.739H0"/>
+  </g>
+
+  <g id="age-green">
+  <path d="M0 6.828h6.855V3.414A3.426 3.426 0 0 1 10.285 0a3.42 3.42 0 0 1 3.43 3.414v3.414h20.57V3.414a3.42 3.42 0 0 1 3.43-3.41 3.423 3.423 0 0 1 3.43 3.41v3.414H48v10.246H0m0 3.414h48v30.739H0"/>
+  </g>
+
+  <g id="age-red">
+  <path d="M0 6.828h6.855V3.414A3.426 3.426 0 0 1 10.285 0a3.42 3.42 0 0 1 3.43 3.414v3.414h20.57V3.414a3.42 3.42 0 0 1 3.43-3.41 3.423 3.423 0 0 1 3.43 3.41v3.414H48v10.246H0m0 3.414h48v30.739H0"/>
+  </g>
+
+  <g id="correct">
+  <path d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm-4.8 36l-12-12 3.359-3.36 8.64 8.641L37.441 11.04l3.36 3.36zm0 0" fill-rule="evenodd"/>
+  </g>
+
+  <g id="error">
+  <path d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm2.398 36h-4.796v-4.8h4.796zm0-9.602h-4.796V12h4.796zm0 0" fill-rule="evenodd"/>
+  </g>
+
+  <g id="radio-on">
+  <path d="M46.293 24.14c0 12.32-9.992 22.313-22.313 22.313-12.316 0-22.312-9.992-22.312-22.312S11.664 1.828 23.98 1.828c12.32 0 22.313 9.992 22.313 22.313zm0 0"/>
+  <path d="M27 11.793c5.484 1.352 9.563 6.3 9.563 12.207 0 6.938-5.626 12.563-12.563 12.563-6.938 0-12.563-5.626-12.563-12.563 0-5.906 4.079-10.855 9.57-12.207M24 6.871v9.094" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#fff" stroke-miterlimit="10"/>
+  </g>
+
+  <g id="radio-off">
+  <defs>
+    <linearGradient id="d" gradientUnits="userSpaceOnUse" y1="256" x2="512" y2="256">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1" stop-color="#ce2d2d"/>
+    </linearGradient>
+    <linearGradient id="e" gradientUnits="userSpaceOnUse" y1="256" x2="512" y2="256">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1" stop-color="#ce2d2d"/>
+    </linearGradient>
+    <linearGradient id="f" gradientUnits="userSpaceOnUse" x1="42.667" y1="256.001" x2="469.333" y2="256.001">
+      <stop offset="0" stop-color="#ce2d2d"/>
+      <stop offset="1" stop-color="red"/>
+    </linearGradient>
+    <linearGradient id="g" gradientUnits="userSpaceOnUse" y1="256" x2="512" y2="256">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1" stop-color="#ce2d2d"/>
+    </linearGradient>
+    <filter id="a" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+      <feColorMatrix in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="i">
+      <path fill-opacity=".302" d="M0 0h48v48H0z" filter="url(#a)"/>
+    </mask>
+    <clipPath id="b">
+      <path d="M0 0h48v48H0z"/>
+    </clipPath>
+    <g id="h" clip-path="url(#b)">
+      <path d="M24.29 13.52h.917v11.414h-.918zm0 0"/>
+    </g>
+    <mask id="k">
+      <path fill-opacity=".302" d="M0 0h48v48H0z" filter="url(#a)"/>
+    </mask>
+    <clipPath id="c">
+      <path d="M0 0h48v48H0z"/>
+    </clipPath>
+    <g id="j" clip-path="url(#c)">
+      <path d="M26.879 15.734l-.188.895c4.274.906 7.375 4.738 7.375 9.113 0 5.137-4.18 9.317-9.316 9.317-5.137 0-9.316-4.18-9.316-9.317 0-4.375 3.101-8.207 7.375-9.113l-.192-.895c-4.695.993-8.101 5.204-8.101 10.008 0 5.645 4.59 10.235 10.234 10.235 5.64 0 10.23-4.59 10.23-10.235 0-4.805-3.406-9.015-8.101-10.008zm0 0"/>
+    </g>
+  </defs>
+  <path d="M511.999 256c0 141.4-114.598 256-255.999 256C114.6 512 .001 397.4.001 256S114.599.001 256 .001C397.4.001 511.999 114.599 511.999 256zm0 0" transform="matrix(.09357 0 0 .09357 .047 .047)" fill="url(#d)" stroke="url(#e)"/>
+  <path d="M256 469.333c-117.646 0-213.333-95.687-213.333-213.333S138.354 42.668 256 42.668 469.333 138.354 469.333 256c0 117.646-95.687 213.333-213.333 213.333zm0 0" transform="matrix(.09357 0 0 .09357 .047 .047)" fill="url(#f)" stroke="url(#g)"/>
+  <use xlink:href="#h" mask="url(#i)"/>
+  <use xlink:href="#j" mask="url(#k)"/>
+  <path d="M23.543 12.773h.914v11.41h-.914zm0 0" fill="#fff"/>
+  <path d="M26.133 14.984l-.192.899c4.274.902 7.375 4.738 7.375 9.113 0 5.137-4.18 9.317-9.316 9.317-5.137 0-9.316-4.18-9.316-9.317 0-4.375 3.101-8.21 7.375-9.113l-.192-.899c-4.691.996-8.101 5.204-8.101 10.012 0 5.64 4.59 10.23 10.234 10.23 5.645 0 10.234-4.59 10.234-10.23 0-4.805-3.406-9.016-8.101-10.012zm0 0" fill="#fff"/>
+  </g>
+
+  <g id="checkbox">
+  <path d="M13.066 18.934l-3.734 3.734 12 12L48 8l-3.734-3.734-22.934 22.933zm29.602 23.734H5.332V5.332H32V0H5.332C2.398 0 0 2.398 0 5.332v37.336C0 45.602 2.398 48 5.332 48h37.336C45.602 48 48 45.602 48 42.668V21.332h-5.332zm0 0" fill-rule="evenodd"/>
+  </g>
+
+  <g id="empty-checkbox">
+  <path d="M42.668 5.332v37.336H5.332V5.332zm0-5.332H5.332C2.398 0 0 2.398 0 5.332v37.336C0 45.602 2.398 48 5.332 48h37.336C45.602 48 48 45.602 48 42.668V5.332C48 2.398 45.602 0 42.668 0zm0 0" fill-rule="evenodd"/>
+  </g>
+
+  <g id="dropdown">
+  <path d="M47.04 23.813C47.04 11.085 36.726.773 24 .773 11.273.773.96 11.086.96 23.813.96 36.538 11.274 46.852 24 46.852c12.727 0 23.04-10.313 23.04-23.04zm0 0" fill="#7b1fa2"/>
+  <path d="M11.742 18.52l12.403 11.187L36.539 18.52l1.707 1.539-14.101 12.734-14.106-12.734zm0 0" fill="#fff"/>
+  </g>
+
+
+</defs>
+<g>
+	<use  fill="#7b1fa2" xlink:href="#name-purple" transform="translate(0 0)"></use>
+  <use  fill="#4caf50" xlink:href="#name-green" transform="translate(0 54)"></use>
+  <use  fill="red" xlink:href="#name-red" transform="translate(0 108)"></use>
+  <use  fill="#7b1fa2" xlink:href="#mail-purple" transform="translate(0 162)"></use>
+  <use  fill="#4caf50" xlink:href="#mail-green" transform="translate(0 216)"></use>
+  <use  fill="red" xlink:href="#mail-red" transform="translate(0 270)"></use>
+  <use  fill="#7b1fa2" xlink:href="#age-purple" transform="translate(0 324)"></use>
+  <use  fill="#4caf50" xlink:href="#age-green" transform="translate(0 388)"></use>
+  <use  fill="red" xlink:href="#age-red" transform="translate(0 452)"></use>
+  <use  fill="#4caf50" xlink:href="#correct" transform="translate(0 510)"></use>
+  <use  fill="red" xlink:href="#error" transform="translate(0 564)"></use>
+  <use  fill="#4caf50" xlink:href="#radio-on" transform="translate(0 618)"></use>
+  <use  fill="red" xlink:href="#radio-off" transform="translate(0 672)"></use>
+  <use  fill="#4caf50" xlink:href="#checkbox" transform="translate(0 726)"></use>
+  <use  fill="red" xlink:href="#empty-checkbox" transform="translate(0 780)"></use>
+  <use  fill="#7b1fa2" xlink:href="#dropdown" transform="translate(0 834)"></use>
+</g>
+
+</svg>
