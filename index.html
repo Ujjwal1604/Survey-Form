@@ -30,46 +30,53 @@
 
 			<form action="#" id="survey-form" name="survey-form">
 				<div class="input-field">
-					<label class="input-label label-align" for="name" id="name-label" >Name:</label> 
-					
-					<input id="name" name="name" placeholder="Enter Your Name" required type="text"><span class="validation"></span>
-					
+					<label class="input-label label-align" for="name" id="name-label" >Name:</label>
+					<input id="name" class="addicon" name="name" placeholder="Enter Your Name" required type="text">
+          <span class="validation addicon"></span>
+
 				</div>
 
 
 				<div class="input-field">
-					<label class="input-label label-align" for="email" id="email-label">Email:</label> 
-					<input id="email" name="email" placeholder="Enter Your Email" required type="email"><span class="validation"></span>
+					<label class="input-label label-align" for="email" id="email-label">Email:</label>
+					<input id="email" class="addicon" name="email" placeholder="Enter Your Email" required type="email">
+          <span class="validation addicon"></span>
 				</div>
 
 
 				<div class="input-field">
-					<label class="input-label label-align" for="number" id="number-label">Age:</label> 
-					<input id="number" max="125" min="1" name="age" placeholder="Age" required type="number"><span class="validation"></span>
+					<label class="input-label label-align" for="number" id="number-label">Age:</label>
+					<input id="number" class="addicon" max="125" min="1" name="age" placeholder="Age" required type="number">
+          <span class="validation addicon"></span>
 				</div>
 
 
 				<fieldset class="input-field" id="radio-buttons">
-					<legend class="input-label" id="radio-legend">How satisfied are you with the content?</legend> <input class="hide-input" id="1star" name="satisfaction-level" type="radio" value="1star"> <label class="radio-label" for="1star">Very dissatisfied</label><br>
-					<input class="hide-input" id="2star" name="satisfaction-level" type="radio" value="2star"> <label class="radio-label" for="2star">Dissatisfied</label><br>
-					<input class="hide-input" id="3star" name="satisfaction-level" type="radio" value="3star"> <label class="radio-label" for="3star">Neutral</label><br>
-					<input class="hide-input" id="4star" name="satisfaction-level" type="radio" value="4star"> <label class="radio-label" for="4star">Satisfied</label><br>
-					<input checked class="hide-input" id="5star" name="satisfaction-level" type="radio" value="5star"> <label class="radio-label" for="5star">Very satisfied</label><br>
+					<legend class="input-label" id="radio-legend">How satisfied are you with the content?</legend>
+          <input class="hide-input" id="1star" name="satisfaction-level" type="radio" value="1star"> <label class="radio-label addicon" for="1star">Very dissatisfied</label><br>
+					<input class="hide-input" id="2star" name="satisfaction-level" type="radio" value="2star"> <label class="radio-label addicon" for="2star">Dissatisfied</label><br>
+					<input class="hide-input" id="3star" name="satisfaction-level" type="radio" value="3star"> <label class="radio-label addicon" for="3star">Neutral</label><br>
+					<input class="hide-input" id="4star" name="satisfaction-level" type="radio" value="4star"> <label class="radio-label addicon" for="4star">Satisfied</label><br>
+					<input checked class="hide-input" id="5star" name="satisfaction-level" type="radio" value="5star">
+          <label class="radio-label addicon" for="5star">Very satisfied</label><br>
 				</fieldset>
 
 
 				<fieldset class="input-field" id="checkboxes">
-					<legend class="input-label" id="checkbox-legend">What prompted your visit to our site today? Please select all that apply.</legend> <input class="hide-input" id="compare" name="Reason" type="checkbox" value="compare"> <label class="checkbox-label" for="compare">Comparison shopping</label><br>
-					<input class="hide-input" id="purchase" name="Reason" type="checkbox" value="purchase"> <label class="checkbox-label" for="purchase">Interested in purchasing products</label><br>
-					<input class="hide-input" id="contactinfo" name="Reason" type="checkbox" value="contactinfo"> <label class="checkbox-label" for="contactinfo">Looking for contact information</label><br>
-					<input class="hide-input" id="techsupport" name="Reason" type="checkbox" value="techsupport"> <label class="checkbox-label" for="techsupport">Looking for technical support</label><br>
-					<input class="hide-input" id="other" name="Reason" type="checkbox" value="other"> <label class="checkbox-label" for="other">Other</label><br>
+					<legend class="input-label" id="checkbox-legend">What prompted your visit to our site today? Please select all that apply.</legend>
+          <input class="hide-input" id="compare" name="Reason" type="checkbox" value="compare">
+          <label class="checkbox-label addicon" for="compare">Comparison shopping</label><br>
+					<input class="hide-input addicon" id="purchase" name="Reason" type="checkbox" value="purchase">
+          <label class="checkbox-label addicon" for="purchase">Interested in purchasing products</label><br>
+					<input class="hide-input" id="contactinfo" name="Reason" type="checkbox" value="contactinfo"> <label class="checkbox-label addicon" for="contactinfo">Looking for contact information</label><br>
+					<input class="hide-input" id="techsupport" name="Reason" type="checkbox" value="techsupport"> <label class="checkbox-label addicon" for="techsupport">Looking for technical support</label><br>
+					<input class="hide-input" id="other" name="Reason" type="checkbox" value="other"> <label class="checkbox-label addicon" for="other">Other</label><br>
 				</fieldset>
 
 
 				<div class="input-field">
 					<label class="input-label" for="dropdown">How frequently do you visit our site?</label><br>
-					<select id="dropdown" name="frequency">
+					<select id="dropdown" name="frequency" class="addicon">
 						<option value="First Choice">
 							First Choice
 						</option>
@@ -102,7 +109,7 @@
 
 
 				<div class="input-field">
-					<label class="input-label" for="comments">Do you have any other comments about how we can improve our website?</label> 
+					<label class="input-label" for="comments">Do you have any other comments about how we can improve our website?</label>
 
 					<textarea cols="30" id="comments" name="comments" placeholder="Enter your comment here..." rows="10"></textarea>
 				</div>

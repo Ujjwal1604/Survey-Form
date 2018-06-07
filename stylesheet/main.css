@@ -3,9 +3,7 @@
   padding: 0;
 }
 
-main,
-header,
-footer {
+main, header, footer {
   display: block;
 }
 
@@ -34,9 +32,7 @@ footer {
 }
 
 :root {
-  --main-body-width: calc(
-    260px + (100vw - 320px) * ((585 - 260) / (1366 - 320))
-  );
+  --main-body-width: calc( 260px + (100vw - 320px) * ((585 - 260) / (1366 - 320)));
 }
 
 body {
@@ -84,7 +80,9 @@ header {
   margin: 2vw auto 0 auto;
   line-height: 2.5rem;
 }
-
+.addicon{
+  background: url(../image/sprite.png) no-repeat -10%-10%;
+}
 .input-field {
   display: block;
   margin-bottom: 0.76rem;
@@ -128,48 +126,53 @@ input:invalid:not(:placeholder-shown) {
 input:valid {
   border: 1px solid #4caf50;
 }
-input:required {
-  background: url(../image/sprite.png) no-repeat;
-}
 
 input[type="text"]:invalid:placeholder-shown {
   background-position: 0 77.464789%;
   background-size: 2.3rem;
 }
+
 input[type="email"]:invalid:placeholder-shown {
   background-position: 1.4% 56.338028%;
   background-size: 1.96rem;
 }
+
 input[type="number"]:invalid:placeholder-shown {
   background-position: 1% 14.084507%;
   background-size: 2.1rem;
 }
+
 input[type="text"]:invalid:not(:placeholder-shown) {
   background-position: 0 70.422535%;
   background-size: 2.3rem;
 }
+
 input[type="email"]:invalid:not(:placeholder-shown) {
   background-position: 1.4% 49.295775%;
   background-size: 1.96rem;
 }
+
 input[type="number"]:invalid:not(:placeholder-shown) {
   background-position: 1% 7.042254%;
   background-size: 2.1rem;
 }
+
 input[type="text"]:valid {
   background-position: 0 63.380282%;
   background-size: 2.3rem;
 }
+
 input[type="email"]:valid {
   background-position: 1.4% 42.253521%;
   background-size: 1.96rem;
 }
+
 input[type="number"]:valid {
   background-position: 1% 0%;
   background-size: 2.1rem;
 }
+
 .validation {
-  background: url(../image/sprite.png) no-repeat -10% -10%;
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
@@ -177,17 +180,18 @@ input[type="number"]:valid {
   position: relative;
   top: 0.5rem;
 }
-input:valid + .validation {
+
+input:valid+.validation {
   background-position: 0 21.126761%;
   background-size: 1.8rem;
 }
-input:invalid:not(:placeholder-shown) + .validation {
+
+input:invalid:not(:placeholder-shown)+.validation {
   background-position: 0 35.211268%;
   background-size: 1.8rem;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-butto {
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -209,22 +213,22 @@ fieldset {
   overflow: hidden;
 }
 
-.radio-label,
-.checkbox-label {
+.radio-label, .checkbox-label {
   display: inline-block;
-  background: url("../image/sprite.png") no-repeat;
-  background-position: -10% -10%;
   padding-left: 2rem;
   line-height: 1.4rem;
   background-size: 1.33rem;
   cursor: pointer;
 }
+
 .radio-label {
   background-position: 0 84.507042%;
 }
-input:checked + .radio-label {
+
+input:checked+.radio-label {
   background-position: 0 91.549296%;
 }
+
 .radio-label:not(:last-of-type) {
   margin-bottom: 0.5rem;
 }
@@ -234,10 +238,11 @@ input:checked + .radio-label {
   background-size: 2.4rem;
 }
 
-input:checked + .checkbox-label {
+input:checked+.checkbox-label {
   background-position: 0 95.890411%;
   background-size: 2.4rem;
 }
+
 .checkbox-label:not(:last-of-type) {
   margin-bottom: 0.5rem;
 }
@@ -246,7 +251,8 @@ legend {
   margin-bottom: 0.4rem;
 }
 
-select {
+select#dropdown{
+  outline: none;
   margin-top: 0.76rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -254,18 +260,16 @@ select {
   padding: 0.6rem 0 0.6rem 0.3rem;
   border: 1px solid #7b1fa2;
   border-radius: 4px;
-  background: url("../image/sprite.png") no-repeat 99% 28.169014%;
-  background-size: 2rem;
   cursor: pointer;
   color: #212121;
+  background-position: 99% 28.169014%;
+  background-size: 2rem;
 }
 
 textarea {
+  outline: none;
   display: block;
   margin-top: 0.76rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   border: 1px solid #7b1fa2;
   padding-top: 0.3rem;
   padding-left: 0.3rem;
