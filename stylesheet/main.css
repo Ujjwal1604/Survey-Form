@@ -99,9 +99,9 @@ input:required {
   width: calc(140px + (100vw - 320px) * ((210 - 140) / (1366 - 320)));
   padding: 0.6rem 0.6rem 0.6rem 2.5rem;
   border-radius: 4px;
-  -moz-transition: border 1s ease-out, background-image 1s ease-out;
-  -webkit-transition: border 1s ease-out, background-image 1s ease-out;
-  transition: border 1s ease-out, background-image 1s ease-out;
+  -moz-transition: border 1s ease-out;
+  -webkit-transition: border 1s ease-out;
+  transition: border 1s ease-out;
   outline: none;
 }
 
@@ -126,7 +126,7 @@ input:invalid:not(:placeholder-shown) {
 }
 
 input:valid {
-  border: 1px solid rgb(13, 194, 13);
+  border: 1px solid #4caf50;
 }
 input:required {
   background: url(../image/sprite.png) no-repeat;
