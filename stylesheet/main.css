@@ -94,7 +94,7 @@ header {
 }
 
 input:required {
-  width: calc(140px + (100vw - 320px) * ((210 - 140) / (1366 - 320)));
+  width: calc(130px + (100vw - 320px) * ((210 - 130) / (1366 - 320)));
   padding: 0.6rem 0.6rem 0.6rem 2.5rem;
   border-radius: 4px;
   -moz-transition: border 1s ease-out;
@@ -174,21 +174,21 @@ input[type="number"]:valid {
 
 .validation {
   display: inline-block;
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-left: 0.5rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-left: 0.2rem;
   position: relative;
-  top: 0.5rem;
+  top: 0.3rem;
 }
 
 input:valid+.validation {
   background-position: 0 21.126761%;
-  background-size: 1.8rem;
+  background-size: 1.4rem;
 }
 
 input:invalid:not(:placeholder-shown)+.validation {
   background-position: 0 35.211268%;
-  background-size: 1.8rem;
+  background-size: 1.4rem;
 }
 
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
