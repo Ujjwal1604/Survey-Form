@@ -25,22 +25,17 @@ main, header, footer {
   }
 }
 
-@media only screen and (max-width: 380px) {
-  main {
-    border-radius: 0;
-  }
-}
-
 :root {
   --main-body-width: calc( 260px + (100vw - 320px) * ((585 - 260) / (1366 - 320)));
 }
 
-body {
+.background {
   background: url("../image/table\ top.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   line-height: 1.4rem;
+  padding-top: 0.1rem;
 }
 
 h1 {
